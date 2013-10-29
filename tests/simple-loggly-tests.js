@@ -9,6 +9,7 @@ test('When I Log an error, Then the correct uri is posted to', function() {
 	var FakeHttpRequest = {
 		post: function(url, data, callback, options) {
 			postedUri = url;
+			callback();
 		}
 	};
 	var simpleLoggly = new SimpleLoggly(FakeHttpRequest, logglyKey);
@@ -25,10 +26,12 @@ test('When I Log an error, Then the correct data is posted', function() {
 	var FakeHttpRequest = {
 		post: function(url, data, callback, options) {
 			postedData = data;
+			callback();
 		}
 	};
 	var simpleLoggly = new SimpleLoggly(FakeHttpRequest, logglyKey);
 	simpleLoggly.log(data);
 	assert.deepEqual(postedData, data);
 });
+
 
