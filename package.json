@@ -1,0 +1,26 @@
+{
+  "name": "simple-loggly",
+  "description": "A Simple wrapper around the Loggly Gen2 Cloud service",
+  "keywords": ["Loggly","Logglier","Gen2"],
+  "version": "1.0.0",
+  "private": false,
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/Allegro-Networks/redis-repository"
+  },
+  "directories": {
+     "lib": "./lib",
+     "DataNormalisation": "./lib/DataNormalisation"
+  },
+  "main": "./lib/redis-repository.js",
+  "dependencies": {
+    "then-redis": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "jshint": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
