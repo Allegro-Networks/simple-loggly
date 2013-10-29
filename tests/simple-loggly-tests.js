@@ -1,5 +1,5 @@
 var assert = require('assert'),
-	SimpleLoggly = require('../lib/simple-loggly');
+	SimpleLoggly = require('../lib/SimpleLoggly');
 
 
 test('When I Log an error, Then the correct uri is posted to', function() {
