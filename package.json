@@ -2,7 +2,7 @@
   "name": "simple-loggly",
   "description": "A Simple wrapper around the Loggly Gen2 Cloud service",
   "keywords": ["Loggly","Logglier","Gen2"],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author" : "Allegro Networks",
   "contributors" : [{
     "name": "Ben Flowers",
